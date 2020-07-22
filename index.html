@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Tracker</title>
     <link rel="stylesheet" href="./bootstrap.min.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"
+    /> -->
   </head>
   <body>
     <nav class="navbar navbar-dark bg-primary mb-3">
@@ -13,17 +17,52 @@
       </div>
     </nav>
     <div class="container search-container">
-        <div class="search card card-body">
-            <h1>Search Github users</h1>
-            <p class="lead">enter a username to fetch a user profile and repose</p>
-            <input type="text" id="searchUser" class="form-control" placeholder="github username">
-            <br>
-            <div id="profile"></div>
-        </div>
+      <div class="search card card-body">
+        <h1>Search Github users</h1>
+        <p class="lead">enter a username to fetch a user profile and repose</p>
+        <input
+          type="text"
+          id="searchUser"
+          class="form-control"
+          placeholder="github username"
+        />
+        <br />
+        <div id="profile"></div>
+      </div>
     </div>
-    <footer class="mt-5 p-3 text-center bg-light">  
-        Github finder  &copy;
+    <footer class="mt-5 p-3 text-center bg-light">
+      Github finder &copy;
     </footer>
+<!-- 
+    <div class="card card-body mb-3">
+      <div class="row">
+        <div class="col-md-3">
+          <img src="`${user.avatar_url}`" alt="" class="img-fluid mb-2" />
+          <a
+            class="btn btn-primary btn-block"
+            href="`${user.html_url}`"
+            target="_blank"
+            >View Profile</a
+          >
+        </div>
+        <div class="col-md-9">
+          <span class="badge badge-primary">${user.public_repos}</span>
+          <span class="badge badge-success">${user.public_gists}</span>
+          <span class="badge badge-primary">${user.followers}</span>
+          <span class="badge badge-success">${user.following}</span>
+          <br>
+          <br>
+          <ul class="list-group">
+            <li class="list-group-item">Company: ${user.company}</li>
+            <li class="list-group-item"> website/blog: ${user.blog}</li>
+            <li class="list-group-item">Location: ${user.location}</li>
+            <li class="list-group-item">Member since: ${user.created_at}</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <h3 class="page-heading mb-3">Latest Repos</h3>
+    <div id="repos"></div> -->
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
